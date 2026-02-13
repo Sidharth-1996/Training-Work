@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        // // d=34; //i can't write like this without strict mode i can write it 
+        // // let a = 34;
+        // // let a = "This is me";
+
+        // // const a = 5;
+        // // const a = 6; //can't be done
+
+        // let a=45;
+        // a =4545 + 4;
+        // console.log(a);
+        // //NOBSUN
+        // //Numbers
+        // //Objects
+        // //Booleans
+        // //Strings
+        // //undefined
+        // //null
+
+        // function hello(){
+        //     console.log("Hii, i'm a function.")
+        // }
+        // let obj ={
+        //     r:66,
+        //     m:64,
+
+        //     func: function myFunc(number) {
+        //         console.log("The number is " + number);
+                
+        //     }
+        // }
+
+        // document.addEventListener("click", function click() {
+        //     console.log("Clicked!");
+        //     alert("Clicked!");
+        //     let conf = confirm("Are you sure ? ");
+        //     console.log(conf);
+        // })
+
+        // // for (let index = 0; index < array.length; index++) {
+        // //     const element = array[index];
+            
+        // // }
+        // let arr = [34,23,12];
+        // // arr.forEach(elemet => {
+
+        // // });
+
+        
+        // let ar=[1,2,3];
+        // console.log(this);
+        // function myfun(num){
+        //     console.log("The number is " + this)
+        // }
+        
+
+        // let myobj={
+        //     a:this,
+        //     myfun2 : (n) =>{
+        //         console.log(this);
+        //     }
+        // }
+
+        // setTimeout(()=>{
+        //     console.log("yayyyyyyyy!!!!!!!!!!!!!........");
+        // },3000)
+        // console.log("m neeche wala log hu");
+
+        // // let firstPromise = new Promise((resolve, reject) => {
+        // //     console.log("hii");
+        // //     resolve(1001);
+        // //     reject(new Error("Internal Server Error"));
+        // // });
+
+        // function sayMyName(params) {
+        //     console.log("My name is Lakhan.")
+        // }
+        // setTimeout(sayMyName,10000);
+
+        // let firstPromise = new Promise((resolve,reject) => {
+        //     setTimeout(function sayMyName(){
+        //         console.log("My name is Lakhan.");
+        //     },15000)
+        // })
+
+        // let promise1= new Promise((resolve,reject)=>{
+        //    let success=true;
+        //    if(success){
+        //         resolve(10);
+        //    }
+        //    else{
+        //         reject("Internal Server Error");
+        //    }
+        // });
+
+        // promise1.then((message)=>{
+        //     cosnole.log("First msg: " + message);
+        // }).catch((error)=>{
+        //     cocnole.log("Error : "+error);
+        // })
+
+        // let promise1= new Promise((resolve,reject)=>{
+        //    let success=true;
+        //    if(success){
+        //         resolve(10);
+        //    }
+        //    else{
+        //         reject("Internal Server Error");
+        //    }
+        // });
+
+        // promise1.then((message)=>{
+        //     console.log("First msg: " + message);
+        //     return "Message for second then"
+        // }).then((message)=>{
+        //     console.log("Second Message : "+message);
+        //     return "Message for third then"
+        // }).then((message)=>{
+        //     console.log("Third Message : "+message)
+        // }).catch((error)=>{
+        //     console.log("Error : "+error);
+        // })
+
+        let promise1 =new Promise((resolve,reject)=>{
+            setTimeout(resolve,1000,"first");
+        })
+
+        
+        let promise2 =new Promise((resolve,reject)=>{
+            setTimeout(resolve,2000,"Second");
+        })
+
+        
+        let promise3 =new Promise((resolve,reject)=>{
+            setTimeout(reject,4000,"Third");
+        })
+
+        Promise.all([promise1,promise2,promise3]).then((message)=>{
+            console.log(message);
+        })
+        .catch((error)=>{
+            console.log("error : "+error);
+        })
+
+    </script>
+</head>
+<body>
+    <h1>I am learning JS</h1>
+    
+</body>
+</html>

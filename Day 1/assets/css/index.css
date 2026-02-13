@@ -1,0 +1,32 @@
+*{
+    margin:2px;
+    padding: 0px;
+}
+
+div{
+    height: 300px;
+    width:300px;
+    border:2px groove black;
+    background-image: linear-gradient(orange,white,green);
+}
+
+span{
+    font-size:50px;
+    background-image: linear-gradient(orange,white,green);
+    background-size:contain;
+    background-clip:text;
+    text-transform: uppercase;
+    color:transparent;
+    margin:20px;
+}
+
+#sid{
+    background-image:url("https://imgs.search.brave.com/vc3_Wmjcmdofy3mR7rPa3tm7HFHu15KU-zizfjmiJnc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/NXpkUmgwTzl1UFVB/QUFBTS9ydW5uaW5n/LXRpcmVkLmdpZg.gif");
+    background-size: contain;
+    background-clip: text; 
+    color:transparent;
+}
+
+.cls{
+    background: url("https://imgs.search.brave.com/vc3_Wmjcmdofy3mR7rPa3tm7HFHu15KU-zizfjmiJnc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/NXpkUmgwTzl1UFVB/QUFBTS9ydW5uaW5n/LXRpcmVkLmdpZg.gif");
+}

@@ -1,0 +1,19 @@
+*{
+    margin:0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.grid-container{
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+
+}
+
+.tems{
+    background-color: antiquewhite;
+    border:2px solid black;
+    text-align: center;
+}

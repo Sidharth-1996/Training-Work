@@ -1,0 +1,15 @@
+const UserCard =(prop) =>{
+    return(
+        <>
+        <div className="conatiner-fluid">
+            <div className="card text-center border-1 my-4">
+                <div className="car-header"> <img src={prop.avatar} alt="" style={{height:"200px" ,width:"200px",border:"2px solid",marginTop:"20px"}}/></div>
+                <div className="card-body fw-bold">{prop.name.toUpperCase()}</div>
+                <div className="card-footer">{prop.role}</div>
+            </div>
+        </div>
+        </>
+    )
+}
+
+export default UserCard;
