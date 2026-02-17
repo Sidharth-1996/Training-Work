@@ -61,3 +61,68 @@ const Register = () => {
 
 export default Register
 
+
+//Practise 
+
+// import React from 'react'
+// import { useState } from 'react'
+
+// const Register = () => {
+//   const [formData,setFormData]=useState({
+//     fname:"",
+//     lname:"",
+//     email:"",
+//     pass:"",
+//     phone:"",
+//   });
+
+//   const handleChange=(e)=>{
+//     const {name,value}=e.target;
+//     console.log(name," : ",value);
+//     setFormData((prev)=>({...prev,[name]:value}))
+//   }
+//   const handleSubmit=(e)=>{
+//     e.preventDefault()
+//     console.log(formData)
+//   }
+//   return (
+//     <div>
+//       <div className="container-fluid">
+//         <form onSubmit={handleSubmit}>
+//           <p>Register</p>
+//           <div className="">
+//             <label htmlFor="">First Name : </label>
+//             <input type="text" placeholder='first name' value={formData.fname} name='fname' onChange={handleChange} className='form-control'/>
+//           </div>
+
+//           <div className="">
+//             <label htmlFor="">Last Name : </label>
+//             <input type="text" placeholder='last name' value={formData.lname} name='lname' onChange={handleChange} className='form-control'/>
+//           </div>
+
+//           <div className="">
+//             <label htmlFor="">E-mail : </label>
+//             <input type="text" placeholder='email' value={formData.email} name='email' onChange={handleChange} className='form-control'/>
+//           </div>
+
+//           <div className="">
+//             <label htmlFor="">Password : </label>
+//             <input type="text" placeholder='password' value={formData.password} name='password' onChange={handleChange} className='form-control'/>
+//           </div>
+
+//           <div className="">
+//             <label htmlFor="">Phone Number : </label>
+//             <input type="text" placeholder='phone number' value={formData.phone} name='phone' onChange={handleChange} className='form-control'/>
+//           </div>
+
+//           <div className="">
+//             <input type="Submit" value="Register" className='btn btn-success' />
+//           </div>
+//         </form>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default Register
+

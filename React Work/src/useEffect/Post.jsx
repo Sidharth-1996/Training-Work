@@ -32,3 +32,41 @@ const Post = () => {
 }
 
 export default Post
+
+//Practise
+// import React, { useEffect, useState } from 'react'
+
+// const Post = () => {
+//     const [blogData, setBlogData] = useState([])
+
+//     useEffect(()=>{
+//         fetch("https://jsonplaceholder.typicode.com/posts").then((res)=>res.json()).then((val)=>{
+//             console.log(val)
+//             setBlogData(val)
+            
+//         })
+//     },[])
+//     return (
+//         <div>
+//             <div className="container">
+//                 <div className="row">
+//                     {
+//                         blogData.map((value) => {
+//                             return (
+//                                 <div className="col-3" key={value.index}>
+//                                     <div className="card">
+//                                         <div className="card-header">{value.title}</div>
+//                                         <div className="card-body">{value.body}</div>
+//                                     </div>
+
+//                                 </div>
+//                             )
+//                         })
+//                     }
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
+
+// export default Post
