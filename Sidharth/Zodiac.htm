@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zodiac Sign</title>
+  </head>
+  <body>
+    <script>
+      let name = prompt("Enter your name.");
+      let date = parseInt(prompt("Enter your Date of birth's date"));
+      let flag=0;
+      let zodiacSign = "";
+      let zodiacUrl = "";
+
+      if (date >= 1 && date <= 31) {
+        let month = parseInt(prompt("Enter your Date of birth's month"));
+        if(month==2){
+            if(date>29){
+                alert("Enter a valid date for the entered month")
+            }
+            else{
+                flag=1;
+            }
+        }
+        else if(month==8){
+            if(date>31){
+                alert("Enter a valid date");
+            }
+            else{
+                flag=1;
+            }
+        }
+        else if(month%2==0){
+            if(date>30){
+                alert("Enter a valid date for the entered month");
+            }
+            else{
+                flag=1;
+        //         document.write(`
+        //     <h1>Your name is : ${name}</h1>
+        //     <p>Your Zodiac sign is : ${zodiacSign}
+        //     <br>
+        //     <img src=${zodiacUrl} alt="">
+        //     </p>
+        // `);
+            }
+        }
+        else if(month%2!=0){
+            if(date>31){
+                alert("Enter a valid date for the entered month");
+            }
+            else{
+                flag=1;
+        //         document.write(`
+        //     // <h1>Your name is : ${name}</h1>
+        //     // <p>Your Zodiac sign is : ${zodiacSign}
+        //     // <br>
+        //     // <img src=${zodiacUrl} alt="">
+        //     // </p>
+        // `);
+            }
+        }
+
+        if (month >= 1 && month <= 12) {
+          if (month == 1) {
+            if (date >= 1 && date <= 19) {
+              zodiacSign = "Capricorn";
+              zodiacUrl =
+                "2wCEAAkGBxMTEhUTExMVFhUXGBgaGBcYGBodGhgbGBcXFxoXGhgdHSggGh4lGxgaIjEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGy0mICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLy0tLS8tLS0tLS0tLS0vLS0tLS0tLS0tLS0tLf";
+            }
+            if (date >= 20 && date <= 31) {
+              zodiacSign = "Aquarius";
+              zodiacUrl =
+                "2wCEAAkGBxMSEhUSEhIWFRUXFRcYFRYYFR0XGhYXFxUYFxgXGBUYHSggGBolGxcVITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGhAQGy0lHSUtLS0tLS0tLS0tLS0tLS0tNS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf";
+            }
+          } else if (month == 2) {
+            if (date >= 1 && date <= 18) {
+              zodiacSign = "Aquarius";
+              zodiacUrl =
+                "2wCEAAkGBxMSEhUSEhIWFRUXFRcYFRYYFR0XGhYXFxUYFxgXGBUYHSggGBolGxcVITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGhAQGy0lHSUtLS0tLS0tLS0tLS0tLS0tNS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf";
+            }
+            if (date >= 19 && date <= 29) {
+              zodiacSign = "Pisces";
+              zodiacUrl = "";
+            }
+          } else if (month == 3) {
+            if (date >= 1 && date <= 20) {
+              zodiacSign = "Pisces";
+            }
+            if (date >= 21 && date <= 31) {
+              zodiacSign = "Aries";
+            }
+          } else if (month == 4) {
+            if (date >= 1 && date <= 19) {
+              zodiacSign = "Aries";
+            }
+            if (date >= 20 && date <= 30) {
+              zodiacSign = "Taurus";
+            }
+          } else if (month == 5) {
+            if (date >= 1 && date <= 20) {
+              zodiacSign = "Taurus";
+            }
+            if (date >= 21 && date <= 31) {
+              zodiacSign = "Gemini";
+            }
+          } else if (month == 6) {
+            if (date >= 1 && date <= 20) {
+              zodiacSign = "Gemini";
+            }
+            if (date >= 21 && date <= 30) {
+              zodiacSign = "Cancer";
+            }
+          } else if (month == 7) {
+            if (date >= 1 && date <= 22) {
+              zodiacSign = "Cancer";
+            }
+            if (date >= 23 && date <= 31) {
+              zodiacSign = "Leo";
+            }
+          } else if (month == 8) {
+            if (date >= 1 && date <= 22) {
+              zodiacSign = "Leo";
+            }
+            if (date >= 23 && date <= 31) {
+              zodiacSign = "Virgo";
+            }
+          } else if (month == 9) {
+            if (date >= 1 && date <= 22) {
+              zodiacSign = "Virgo";
+            }
+            if (date >= 23 && date <= 31) {
+              zodiacSign = "Libra";
+            }
+          } else if (month == 10) {
+            if (date >= 1 && date <= 22) {
+              zodiacSign = "Libra";
+            }
+            if (date >= 23 && date <= 30) {
+              zodiacSign = "Scorpio";
+            }
+          } else if (month == 11) {
+            if (date >= 1 && date <= 21) {
+              zodiacSign = "Scorpio";
+            }
+            if (date >= 22 && date <= 31) {
+              zodiacSign = "Sagittarius";
+            }
+          } else if (month == 12) {
+            if (date >= 1 && date <= 21) {
+              zodiacSign = "Sagittarius";
+            }
+            if (date >= 22 && date <= 30) {
+              zodiacSign = "Capricorn";
+            }
+          }
+
+          
+        } else {
+          alert("Enter a valid month.");
+        }
+      } else {
+        alert("Enter a valid date.");
+      }
+      if(flag==1){
+                        document.write(`
+            <h1>Your name is : ${name}</h1>
+            <p>Your Zodiac sign is : ${zodiacSign}
+            <br>
+            <img src=${zodiacUrl} alt="">
+            </p>
+        `);
+      }
+      
+    </script>
+  </body>
+</html>
