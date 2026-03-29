@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "fname": "Sidharth",
+      "email": "admin@gmail.com",
+      "phone": "9582199392",
+      "pass": "sharma@123",
+      "Cpass": "sharma@123",
+      "id": "VKsBqrmpnEs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
