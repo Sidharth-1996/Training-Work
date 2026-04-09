@@ -1,0 +1,107 @@
+/* FULL BACKGROUND */
+.background-dark {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  padding: 20px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* TABLE STYLING */
+.table {
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* TABLE HEADER */
+.table thead {
+  background: rgba(255,255,255,0.1);
+}
+
+/* TABLE CELLS */
+.table th,
+.table td {
+  vertical-align: middle;
+  padding: 12px;
+}
+
+/* ROW HOVER EFFECT */
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(255,255,255,0.08);
+  transform: scale(1.01);
+}
+
+/* BUTTONS GENERAL */
+button {
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* ADD BUTTON */
+.btn-info {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* EDIT BUTTON */
+.btn-outline-warning {
+  border-radius: 8px;
+}
+
+/* DELETE BUTTON */
+.btn-danger {
+  border-radius: 8px;
+}
+
+/* STATUS COLORS*/
+td:nth-child(3) {
+  font-weight: bold;
+}
+
+/* MODAL BACKDROP */
+.modal {
+  background: rgba(0,0,0,0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+/* MODAL BOX */
+.modal-content {
+  background: #1e1e2f;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* INPUT FIELD */
+.modal input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #00c6ff;
+  background: transparent;
+  color:black;
+  outline: none;
+}
+
+/* HEADING */
+h1 {
+  letter-spacing: 1px;
+}

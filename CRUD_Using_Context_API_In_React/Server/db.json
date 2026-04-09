@@ -1,0 +1,15 @@
+{
+  "todos": [
+    {
+      "taskname": "HairCut",
+      "status": true,
+      "id": "CUoZjY_bw2M"
+    },
+    {
+      "taskname": "CRUD using Context API",
+      "status": false,
+      "id": "HAsusLyy4t4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
