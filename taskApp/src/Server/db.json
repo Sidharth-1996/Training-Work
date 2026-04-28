@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "user@gmail.com",
+      "password": "123",
+      "role": "user"
+    }
+  ],
+  "tasks": [
+    {
+      "Title": "A.C Servicing",
+      "Desc": "Repairing and servicing of the ac",
+      "AssignedTo": 2,
+      "CreatedBy": 1,
+      "Status": "completed",
+      "id": "SAoUBIq0WWQ"
+    },
+    {
+      "Title": "Repair Projectors",
+      "Desc": "Repairing and Service Work",
+      "AssignedTo": 2,
+      "CreatedBy": 1,
+      "Status": "pending",
+      "id": "If0CCF9PLWM"
+    },
+    {
+      "Title": "T.L Interaction",
+      "Desc": "",
+      "AssignedTo": 2,
+      "CreatedBy": 1,
+      "Status": "pending",
+      "id": "U_uGjQhmj94"
+    },
+    {
+      "Title": "Repair Phone",
+      "Desc": "Go to phone repairing shop ",
+      "AssignedTo": 2,
+      "CreatedBy": 2,
+      "Status": "pending",
+      "id": "tDIBkgyijiA"
+    },
+    {
+      "Title": "Sidharth's Mental Peace Restoration",
+      "Desc": "necessarily required",
+      "AssignedTo": 2,
+      "CreatedBy": 1,
+      "Status": "pending",
+      "id": "zsQ2XbbrO_Q"
+    },
+    {
+      "Title": "Padh ley",
+      "Desc": "Padh ley bss",
+      "AssignedTo": 2,
+      "CreatedBy": 2,
+      "Status": "pending",
+      "id": "3LkGIaTuxpU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
